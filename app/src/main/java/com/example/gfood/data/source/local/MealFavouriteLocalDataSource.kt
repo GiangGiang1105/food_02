@@ -29,7 +29,7 @@ class MealFavouriteLocalDataSource private constructor(
     companion object {
         private var instance: MealFavouriteLocalDataSource? = null
 
-        fun getInstance(context: Context): MealFavouriteDataSource.Local =
+        fun getInstance(context: Context?): MealFavouriteDataSource.Local =
             instance ?: MealFavouriteLocalDataSource(
                 MealFavouriteDaoImpl.getInstance(
                     DatabaseHelper.getInstance(context)

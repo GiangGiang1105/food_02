@@ -33,4 +33,16 @@ class MealFavouriteRepository(
     ) {
         local.getMeal(idEntity, listener)
     }
+
+    companion object {
+        private var instance: MealFavouriteRepository? = null
+
+        fun getInstance(
+            local: MealFavouriteDataSource.Local
+        ): MealFavouriteRepository {
+            return instance ?: MealFavouriteRepository(local).also {
+                instance = it
+            }
+        }
+    }
 }

@@ -9,6 +9,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
+        buildConfigField "String", "KEY_YOUTUBE", "\"${KEY_YOUTUBE}\""
         applicationId "com.example.gfood"
         minSdkVersion 23
         targetSdkVersion 30

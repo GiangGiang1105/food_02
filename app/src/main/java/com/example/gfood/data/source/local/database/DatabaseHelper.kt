@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import com.example.gfood.data.source.local.database.table.MealFavouriteTable
 
-class DatabaseHelper private constructor(context: Context) :
+class DatabaseHelper private constructor(context: Context?) :
     SQLiteOpenHelper(context, NAME_DATABASE, null, VERSION_DATABASE) {
 
     override fun onCreate(db: SQLiteDatabase?) {
@@ -26,7 +26,7 @@ class DatabaseHelper private constructor(context: Context) :
         @Volatile
         private var instance: DatabaseHelper? = null
 
-        fun getInstance(context: Context): DatabaseHelper =
+        fun getInstance(context: Context?): DatabaseHelper =
             instance ?: DatabaseHelper(context).also {
                 instance = it
             }

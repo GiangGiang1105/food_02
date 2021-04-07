@@ -20,14 +20,14 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textMeal"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/dp_300"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
             android:layout_marginTop="@dimen/dp_20"
             android:fontFamily="@font/redressed"
             android:paddingEnd="@dimen/dp_10"
             android:textColor="@color/color_08BECA"
             android:textSize="@dimen/sp_30"
-            android:layout_marginLeft="@dimen/dp_10"
             app:layout_constraintEnd_toStartOf="@+id/buttonFavourite"
             app:layout_constraintHorizontal_bias="0.033"
             app:layout_constraintStart_toStartOf="parent"
@@ -35,20 +35,20 @@
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/buttonFavourite"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
             android:layout_gravity="center_vertical"
             android:layout_marginTop="@dimen/dp_25"
             android:background="@android:color/transparent"
-            android:paddingRight="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_10"
             android:src="@drawable/ic_unfavourite"
             app:layout_constraintEnd_toStartOf="@+id/buttonShare"
             app:layout_constraintTop_toBottomOf="@+id/viewVideo" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/buttonShare"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
             android:layout_gravity="center_vertical"
             android:layout_marginTop="@dimen/dp_25"
             android:layout_marginRight="@dimen/dp_20"

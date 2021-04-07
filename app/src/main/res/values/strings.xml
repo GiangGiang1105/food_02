@@ -3,6 +3,8 @@
     <string name="failed_to_delete">Failed to delete</string>
     <string name="failed_to_select">Failed to select</string>
     <string name="failed_to_save">Failed to save</string>
+    <string name="instruction">Instruction: </string>
+    <string name="ingredient">Ingredient: </string>
     <string name="title_category">Category</string>
     <string name="title_list">List Meals</string>
 </resources>
